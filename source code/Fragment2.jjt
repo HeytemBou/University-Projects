@@ -1,0 +1,419 @@
+/**
+ * JJTree template file created by SF JavaCC plugin 1.5.28+ wizard for JavaCC 1.5.0+
+ */
+options
+{
+ lookahead=3;
+ multi=true;
+ VISITOR = true ;
+
+}
+
+PARSER_BEGIN(Fragment2)
+import java.io.*;
+public class Fragment2
+{
+  public static void main(String[] args) { 
+   File file = new File("C:\\Users\\HAITAM\\Desktop\\code_teste_fragment2.txt");
+   FileInputStream fis = null;
+    try {
+			fis = new FileInputStream(file);
+
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		if(fis!=null) {
+		  System.out.println("reading from a file :");
+          new Fragment2(fis);
+
+		  }else { 
+    System.out.print("Input :");
+    new Fragment2(System.in);
+  }
+    
+    try
+    {
+      ASTStart n = Fragment2.Start();
+      n.dump("");
+      
+      System.out.println("Thank you.");
+
+      CodeGen code = new CodeGen();
+      CodeVisitor visitor = new CodeVisitor();
+
+      n.jjtAccept(visitor, code);
+      String CodeGenere = code.printCode();
+      
+        try {
+      FileWriter myWriter = new FileWriter("code_abstrait.txt");
+      myWriter.write(CodeGenere);
+      myWriter.close();
+      System.out.println("Successfully wrote to the file.");
+    } catch (IOException e) {
+      System.out.println("An error occurred.");
+      e.printStackTrace();
+    }
+     
+    }
+    catch (Exception e)
+    {
+      System.out.println("Oops.");
+      System.out.println(e.getMessage());
+    }
+  
+  }
+}
+
+
+
+PARSER_END(Fragment2)
+
+SKIP :
+{
+  " "
+| "\n"
+| "\t"
+| "\r"
+|  < "/*" (~["/"])* "*""/" >
+|  <"//"(~["\n","\r"])* ("\n"|"\r"|"\r\n") > 
+
+}
+
+TOKEN : /*String literals*/
+{
+  <STRING : "\"" (["A"-"Z"]|["a"-"z"]|["0"-"9"])* "\"" >
+}
+
+TOKEN : /* Literals */
+{
+  
+  <NOMBRE : <FLOTTANT >|<ENTIER > >
+| < BOOLEEN:< Vrai>|<Faux >> 
+| <IDENT : (["a"-"z"])+(["a"-"z"] | ["A"-"Z" ]|["0"-"9"]|"_")*>
+| < FLOTTANT: (["0"-"9"])*"."(["1"-"9"])+ >
+| < ENTIER: ["0"-"9"] (["0"-"9"])* >
+| <Vrai:"Vrai">
+| <Faux:"Faux">
+| < Epsilon:"" >
+
+| <point_vir:";">
+|< par_gauche:"(">
+| < par_droite:")">
+| < bra_gauche:"{" >
+| < bra_droite:"}" >
+| < point_intero:"?">
+| < deux_points:":">
+| <virg:"," >
+}
+
+TOKEN : /*operations uniaires*/
+{
+   
+   <neg:"!" >
+  | <pui:"**" >
+  | < moins :"-">
+  | <typeof:"Typeof">
+
+}
+
+TOKEN : /*operations arithmetiques binaires*/
+{
+    <plus :"+" >
+  | <mult :"*" >
+  | <divi :"/" >
+  | <mod :"%" >
+ 
+
+}
+
+TOKEN : /*conditionel*/
+{
+   <et :"&&" >
+  | <ou :"||" >
+  | <double_ega :"==" >
+  | <diff:"!=" >
+  | <ega:"=" >
+  | <ega_t:"===" >
+  | <diff_t:"!==" >
+  | <sup :">" >
+  | <inf :"<" >
+  | <sup_ega :">=">
+  | <inf_ega :"<=">
+}
+TOKEN :/*mots reservés*/
+{
+  < Break: "Break" > 
+| < Continue: "Continue" > 
+|< Sinon: "Sinon" > 
+|< Pour: "Pour" > 
+|< Fonction: "Fonction" > 
+|< Si: "Si" > 
+|< Retourner: "Retourne" > 	
+| < TantQue: "TantQue" >
+| < Cas: "Cas" > 
+| < Rattrapper: "Rattrapper" >
+| < Class: "Class" >
+| < Essayer: "Essayer" > 
+| <Faire: "Faire" > 
+| <Finalement:"Finalement" >
+| <Lancer: "Lancer" > 
+| < Etend:"Etend">
+| < Get:"Get">
+| <Set:"Set">
+| <Nul:"Nul">
+| <Ecrire:"Ecrire">
+| <Var:"Var" >
+}
+ 
+ASTStart Start() :
+{}
+{
+  programme()<EOF>
+  
+  {
+    return jjtThis;
+  }
+
+}
+
+void programme() #programme :
+{}
+ {
+ (commande())* 
+
+}
+
+void commande()#command :
+{Token tok1;}
+{
+  
+(
+  <bra_gauche>programme()<bra_droite>
+| affect_expr() <point_vir >
+| <point_vir>
+| <Fonction>tok1 =<IDENT><par_gauche >(arguments())* #arguments_list()<par_droite><bra_gauche >programme()<bra_droite>{ jjtThis.value = tok1.image;}#fonction_declaration(2)
+| <Break >
+| <Retourner>expression()<point_vir >#retourner(1)
+| <Si><par_gauche>expression()<par_droite>commande()<Sinon>commande()#sisinon(3)
+| <Faire>commande()<TantQue><par_gauche>expression()<par_droite>#faire(2)
+| <TantQue><par_gauche>expression()<par_droite>commande()#tantque(2)
+| <Pour><par_gauche>affect_expr()<point_vir>expression()<point_vir>expression()<par_droite>commande()#pour(4)
+| <Ecrire><par_gauche>expression()<par_droite><point_vir>#ecrire(1)
+)
+}
+
+void affect_expr()#void:
+{
+  Token tok1;
+}
+{
+  expression()
+| <Var> tok1= <IDENT><ega>expression() {jjtThis.value=tok1.image; } #declaration_init(1)
+| <Var> tok1=<IDENT> {jjtThis.value=tok1.image; } #declaration(0)
+}
+
+void arguments()#arguments() :
+{
+  Token tok1;
+}
+{
+  
+  tok1=< IDENT >  { jjtThis.value = tok1.image;}#argument()(< virg>arguments())* 
+ 
+}
+
+void expressions()#void :
+{
+}
+{
+ expression()#args_app(1)(<virg>expressions())* 
+}
+
+
+void expression () #expression :
+{
+  Token tok1;
+}
+{
+	tok1=<IDENT><ega> expression(){jjtThis.value=tok1.image;}#assigner(1)
+	| expression_ternaire()(tok1=< IDENT ><ega >expression() { jjtThis.value=tok1.image+"\n"; })*
+	
+}
+
+
+void expression_ternaire () #void:
+{
+  Token tok1,tok2;
+}
+{
+   	boolean_expression()( cond_v()cond_f())*
+}
+
+ void cond_v() #void:
+ {
+   Token tok1 ;
+ }
+ {
+  tok1=<point_intero> expression(){}#cond_v(1)
+ }
+
+ void cond_f() #void:
+ {
+   Token tok1 ;
+ }
+ {
+   tok1=<deux_points>expression(){  }#cond_f(1)
+   
+ }
+
+void boolean_expression() #void :
+{
+  Token tok1;
+}
+{
+  conditional_expression()(	tok1=<ou> conditional_expression()#op_ou(2)
+  							|tok1=<et>conditional_expression()#op_et(2) )*
+}
+void conditional_expression() #void :
+{Token tok1;
+  }
+{
+  additive_expression()(tok1=<ega_t> additive_expression(){ }#teste_egalite(2)
+  						|tok1=<diff_t>additive_expression()#teste_diff(2)
+  						|tok1=<sup>additive_expression()#teste_sup(2)
+  						|tok1=<inf>additive_expression()#teste_inf(2)
+  						|tok1=<inf_ega>additive_expression()#teste_inf_ega(2)
+  						|tok1=<sup_ega>additive_expression()#teste_sup_ega(2)
+  						|tok1=<double_ega>additive_expression()#teste_double_ega(2))*
+}
+
+void additive_expression () #void:
+{
+Token tok1;
+  }
+{
+  multiplicative_expression()(
+   tok1=<plus >multiplicative_expression() { }#op_add(2)
+  |tok1=<moins> multiplicative_expression(){ } #op_moins(2))*
+}
+
+void multiplicative_expression ()#void :
+{
+  Token t;
+}
+{
+       expression_unaire()((t=<mult> expression_unaire(){}#op_mult(2)
+      |t=<divi> expression_unaire(){}#op_divi(2)
+      | t=<mod> expression_unaire(){}#op_mod(2)
+      ))*
+}
+
+void expression_unaire() #void :
+{Token tok1 ;}
+{
+    appel()
+ | <par_gauche> expression()<par_droite>
+ | booleen() 
+ | negation()
+ | identifiant()
+ | nombre()
+ | typeof()
+ | neg_bool()
+ | string()
+ 
+
+ 
+}
+
+void appel() #appel():
+{
+  Token tok1 ;
+}
+{
+  
+  tok1=< IDENT > {jjtThis.value = tok1.image; }<par_gauche>expressions()<par_droite>
+  
+}
+
+void negation() #neg(1):
+{
+  Token t;Token tok1; }
+  {
+   t= <moins> <par_gauche> expression()<par_droite> {}
+  |t= <moins>identifiant()<par_gauche>expressions()<par_droite> {}#appel(1)
+  | t= <moins> nombre() {}
+  | t=< moins >string() { }
+  |t= <moins> identifiant()
+ 
+ 
+  }
+
+void neg_bool() #negbool(1):
+{
+}
+{
+  <neg><par_gauche>expression()<par_droite>
+| <neg>identifiant()
+| <neg>booleen()
+}
+
+void typeof()#typeof(1): 
+{
+}
+{
+  <typeof><par_gauche>expression()<par_droite>
+| <typeof>identifiant()
+| <typeof>booleen()
+| <typeof>nombre()
+| < typeof >string()
+}
+void identifiant() #id(0):
+{
+  Token t;
+}
+  {
+  t=<IDENT>
+  {
+    
+    jjtThis.value = t.image;
+      
+  }
+}
+
+void nombre() #nombre(0):
+{
+  Token t;
+}
+{
+  t=<NOMBRE >
+  {
+   
+   	jjtThis.value = t.image;
+   
+  }
+}
+
+void string() #string(0):
+{
+  Token t;
+}
+{
+  t=<STRING >
+  {
+   
+   	jjtThis.value = t.image;
+   
+  }
+}
+
+void booleen() #booleen(0):
+{
+  Token t;
+}
+{
+	t=<BOOLEEN>
+	{
+	  jjtThis.value = t.image;
+	}
+}
