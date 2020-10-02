@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Sign_up"> inscription gratuite </string>
+    <string name="Sign_in"> se connecter </string>
+    <string name="username_hint"> Nom d\'utilisateur </string>
+    <string name="password_hint"> Mot de passe </string>
+    <string name="anonymous"> Recherche rapide </string>
+    <string name="ForgotPassword"> Mot de passe oublié?</string>
+    <string name="CreateAccount"> Créer un compte </string>
+    <string name="RegistrationFormTitle"> Créer un compte </string>
+    <string name="SettingLabel"> Paramètres </string>
+    <string name="HelpLabel"> Aide et commentaires </string>
+    <string name="LogOutLabel"> déconnecter </string>
+    <string name="UsernameLabel">Choisissez un nom d\'utilisateur</string>
+    <string name="PasswordLabel"> Choisir un mot de passe </string>
+    <string name="EmailLabel"> Quel est ton e-mail?</string>
+    <string name="TelephoneLabel">Quel est ton numéro de téléphone?</string>
+    <string name="Already"> Déjà un utilisateur ?</string>
+    <string name="home"> Accueil </string>
+    <string name="search"> rechercher </string>
+    <string name="map_search"> Filtre de carte </string>
+    <string name="create_new_ad"> Créer une nouvelle annonce </string>
+    <string name="DeleteAd"> Effacer </string>
+    <string name="EditAd"> modifier </string>
+    <string name="PublierAd"> Publier </string>
+    <string name="MasquerAd"> Cacher </string>
+    <string name="CreateAccountFormHead"> Créer un compte </string>
+    <string name="LogInButtonTitle"> s\'identifier </string>
+    <string name="ProfileTabTitle"> Mon profil</string>
+    <string name="SearchTabTitle"> recherche </string>
+    <string name="PersonalAdsTabTitle">annonces</string>
+    <string name="MapFilterTabTitle">la carte</string>
+    <string name="CreateNewAd"> Nouvelle annonce </string>
+
+
+    <string name="title_activity_maps"> Carte </string>
+    <string name="title_activity_login"> se connecter </string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password"> Mot de passe (optional)</string>
+    <string name="action_sign_in"> Connexion ou Inscription </string>
+    <string name="action_sign_in_short"> se connecter </string>
+    <string name="error_invalid_email"> Cette adresse e-mail est invalide </string>
+    <string name="error_invalid_password"> Ce mot de passe est trop court </string>
+    <string name="error_incorrect_password"> Ce mot de passe est incorrect </string>
+    <string name="error_field_required"> Ce champ est requis </string>
+    <string name="permission_rationale">" Les autorisations de contacts sont nécessaires pour fournir un e-mail
+         achèvements. "    </string>
+
+    <string name="title_activity_settings"> Paramètres </string>
+    <string name="PasswordResetParagraph"> Afin de réinitialiser votre mot de passe, nous vous enverrons un code de confirmation. s'il vous plaît entrez votre adresse e-mail ou numéro de téléphone associé à votre compte </string>
+    <string name="EmailAndPhoneAssociated"></string>
+    <string name="Send"> Envoyer </string>
+    <string name="KeywordHint"> Entrez un mot-clé </string>
+    <string name="CategoryHint"> Choisissez une catégorie </string>
+    <string name="TypeHint"> Choisissez le type d\'annonce </string>
+    <string name="Filter"> Filtrer </string>
+    <string name="Resend"> Renvoyer </string>
+    <string name="ConfirmationCodeHint"> Entrez le code à 6 chiffres </string>
+    <string name="Confirm"> Confirmer </string>
+    <string name="NewPasswordHint"> Choisissez un nouveau mot de passe </string>
+    <string name="NewPasswordConfirmHint"> Confirmez votre nouveau mot de passe </string>
+    <string name="ResetMyPassword"> Réinitialiser mon mot de passe </string>
+    <string name="Offer"> Offre </string>
+    <string name="Demand"> Demande </string>
+    <string name="Both">  les deux </string>
+
+    <string name="Slide1_title"> Bienvenue à revilio </string>
+    <string name="Slide1_content"> Les meilleures annonces recon jamais </string>
+    <string name="Slide2_title"> Rechercher des annonces rapidement </string>
+    <string name="Slide2_content"> Trouvez ce que vous cherchez et localisez le immédiatement  </string>
+    <string name="Slide3_title"> Rejoignez notre communauté </string>
+    <string name="Slide3_content"> Créez un compte, créez et publiez vos annonces personnelles en toute simplicité </string>
+    <string name="Slide4_title"> Contacter et négocier </string>
+    <string name="Slide4_content"> et beaucoup plus à découvrir !!</string>
+
+    <string name="SlideNextButton"> Prochain </string>
+    <string name="SlideSkipButton"> Sauter </string>
+    <string name="start"> Début </string>
+
+
+    <string name="MyPreference">com.heythem.rahma.ti.2018</string>
+    <string name="MyPreferenceKey">reyoga waka teyki okorow</string>
+    <string name="LoginFailed"> Échec de la connexion ! .. réessayer </string>
+    <string name="LoginSuccess"> Connexion réussie </string>
+    <string name="Login"> se connecter </string>
+    <string name="CreateAndPublish"> Créer et publier </string>
+    <string name="Cancel"> Annuler </string>
+    <string name="PhotoCapturingLabel">Photo</string>
+    <string name="AdPhotosTip"> Au moins une photo est requise pour l\'annonce </string>
+    <string name="Choose_your_location"> Précisez votre emplacement </string>
+    <string name="publish_ad"> Publier mon annonce </string>
+    <string name="settings"> Paramètres </string>
+    <string name="profile_settings_label"> Paramètres de profil </string>
+    <string name="application_settings_label"> Paramètres de l\'application </string>
+    <string name="about_us_label"> À propos de nous </string>
+    <string name="search_label"> recherche </string>
+    <string name="take_photo"> Prendre une photo par caméra </string>
+    <string name="load_photo"> Charger une photo de la galerie </string>
+    <string name="type_of_the_ad"> Type de l\'annonce </string>
+    <string name="next"> Prochain </string>
+    <string name="back"> Arrière </string>
+    <string name="type">Type :</string>
+    <string name="TitleLabel"> Choisissez un titre approprié pour votre annonce :</string>
+    <string name="descriptionLabel"> Fournissez une description détaillée de votre annonce:</string>
+    <string name="title_activity_settings2"> Paramètres </string>
+
+    <string name="SignUpLabel"> Vous n\'avez pas de compte? S\'inscrire </string>
+    <string name="SearchHint"> Entrez un mot-clé </string>
+    <string name="choose_a_category"> Choisir une catégorie:</string>
+    <string name="choose_a_sub_category"> Choisissez une sous-catégorie </string>
+    <string name="choose_a_sub_categorylabel"> Choisissez une sous-catégorie :</string>
+    <string name="choose_a_sub_category2"> Sélectionnez une sous-catégorie:</string>
+    <string name="SaveChanges"> Sauvegarder les modifications </string>
+    <string name="log_out"> déconnecter </string>
+    <string name="WrongEmailOrPassword"> Mauvais email ou mot de passe </string>
+    <string name="first_and_last_name"> Prénom et nom :</string>
+    <string name="PhoNum"> Numéro de téléphone:</string>
+    <string name="email_adress_optional"> Adresse e-mail:</string>
+    <string name="first_name"> Prénom:</string>
+    <string name="lastname"> Nom :</string>
+    <string name="discard_changes"> Annuler les modifications </string>
+    <string name="provide_3_photos_for_your_ad"> Fournir 3 photos pour votre annonce </string>
+    <string name="take_your_time_to_fill_in_all_necessary_informations_for_your_ad"> Prenez le temps de remplir toutes les informations nécessaires pour votre annonce </string>
+    <string name="enter_contact_informations_so_people_can_get_in_touch_with_you"> Entrez les informations de contact afin que les gens puissent vous contacter </string>
+    <string name="choose_a_method"> Choisissez une méthode:</string>
+    <string name="description"> La description </string>
+    <string name="no_ads_to_show_hit_that_button_below_and_start_making_some_ads"> Aucune annonce à afficher, appuyez sur ce bouton ci-dessous et commencer à faire des annonces!!</string>
+
+    <string name="your_current_username"> Votre nom d\'utilisateur actuel </string>
+    <string name="enter_a_new_username"> Entrez un nouveau nom d\'utilisateur </string>
+    <string name="username_must_not_contain_any_special_characters"> Le nom d\'utilisateur ne doit pas contenir de caractères spéciaux </string>
+    <string name="edit"> éditer </string>
+    <string name="your_current_email"> Votre adresse email actuelle </string>
+    <string name="enter_a_new_email"> Entrez un nouveau Email</string>
+    <string name="not_a_valid_email_address"> Adresse email invalide </string>
+    <string name="you_don_t_be_nameless_right"> Vous n\'êtes pas anonyme, c’est vrais ?</string>
+    <string name="ad_deletion_confirmation"> Etes-vous sûr de vouloir supprimer cette annonce? ?</string>
+    <string name="Yes">oui</string>
+    <string name="filter"> Filtrer </string>
+    <string name="No">non</string>
+    <string name="change_account"> Changer de compte </string>
+    <string name="delete_account"> Supprimer le compte </string>
+    <string name="usernae_must_be_at_least_6_characters_long"> Le nom d\'utilisateur doit comporter au moins 3 caractères </string>
+    <string name="you_must_provide_a_valid_email_address"> Vous devez fournir une adresse e-mail valide </string>
+    <string name="comments_section"> Section des commentaires </string>
+    <string name="revilio">Revilio</string>
+    <string name="location_based_ads_finder"> Localisateur d\'annonces basé sur le lieu </string>
+    <string name="ads_published"> Annonces publiées:</string>
+    <string name="advanced_search"> Recherche Avancée </string>
+    <string name="within_the_last"> Dans le dernier:</string>
+    <string name="where"> Où?</string>
+    <string name="_24_hours">24 heures </string>
+    <string name="_7_days">7 jours </string>
+    <string name="_30_days">30 jours </string>
+    <string name="around_me_less_than_3_km"> Autour de moi (moins de 5 km)</string>
+    <string name="in_my_city_less_than_10_km"> Dans ma ville (moins de 15 km)</string>
+    <string name="in_my_region_less_than_30_km"> Dans ma région (moins de 50 km)</string>
+    <string name="everywhere"> Partout </string>
+    <string name="published_by"> Publié par </string>
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="let_me_choose">Laisse-moi choisir</string>
+    <string name="what_kind_of_an_ad">Quel genre d\'annonce?</string>
+    <string name="sign_in_up_here">Connectez-vous ici</string>
+    <string name="you_re_not_logged_in">Vous n\'êtes pas connecté</string>
+    <string name="unless_your_ad_is_an_offer_you_must_provide_3_photos">Sauf si votre annonce est une offre, vous devez fournir 3 photos:</string>
+    <string name="take_your_time_to_fill_in_the_necessary_informations_for_your_ad">Prenez votre temps pour remplir les informations nécessaires pour votre annonce</string>
+    <string name="provide_contact_informations_so_people_can_get_in_touch_with_you">Fournir des informations de contact pour que les gens puissent vous contacter</string>
+    <string name="please_fill_out_all_the_missing_information">S\'il vous plaît remplir toutes les informations manquantes</string>
+    <string name="account_delete_confirmation">Cela supprimera votre compte et toutes les annonces associées à celui-ci, êtes-vous sûr de vouloir poursuivre cette opération?</string>
+    <string name="contact_information_must_be_valid_and_filled_out">Les informations de contacte doivent être valides et remplies</string>
+    <string name="one_or_more_photos_are_missing">Une ou plusieurs photos sont manquantes</string>
+    <string name="add_new_comment">ajouter un commentaire</string>
+    <string name="share_this_ad">Partagez cette annonce</string>
+    <string name="email_used">Cette adresse e-mail est déjà utilisée</string>
+    <string name="password_must_be_at_least_8_characters_long">Le mot de passe doit comporter au moins 8 caractères</string>
+    <string name="username_must_be_at_least_3_characters_long">Le nom d\'utilisateur doit comporter au moins 3 caractères</string>
+    <string name="not8valid8email">Adresse email invalide</string>
+    <string name="edit_the_email">Modifier l\'email</string>
+    <string name="edit_phone_number">Modifier le numéro </string>
+    <string name="edit_last_name">Modifier le nom </string>
+    <string name="edit_first_name">Modifier le prénom</string>
+    <string name="edit_the_ad_description">Modifier la description </string>
+    <string name="edit_the_ad_title">Modifier le titre </string>
+    <string name="Slide1">Recherchez et localisez des annonces rapidement et facilement  </string>
+    <string name="Slide2">Contacter et négocier</string>
+    <string name="Slide3">Inscrivez-vous gratuitement et commencez à publier votre annonces</string>
+    <string name="gps_service_not_available">(Service GPS non disponible)</string>
+    <string name="developped_by">Développé par</string>
+    <string name="heythem_boumaza">Heythem Boumaza</string>
+    <string name="rahma_guerioun">Rahma Guerioun</string>
+    <string name="no_results_found">Aucun résultat trouvé</string>
+    <string name="all_rights_reserved_2017_2018">Tous droits réservés @ 2017-2018</string>
+</resources>

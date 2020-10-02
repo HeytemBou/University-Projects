@@ -1,0 +1,158 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ProfileContainer"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.firstgpsapp.proudlikeagod.locationbasedadsfinder.ProfileFragment">
+ <LinearLayout
+     android:background="@color/Purple"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ProfileImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="36dp"
+        android:padding="20dp" />
+     <RelativeLayout
+         android:id="@+id/StatusLayout"
+         android:layout_marginTop="20dp"
+         android:layout_gravity="center"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+
+     <TextView
+         android:layout_marginTop="1dp"
+         android:id="@+id/ProfileUsername"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:fontFamily="sans-serif-condensed"
+         android:textColor="@color/White"
+         android:textSize="16sp"/>
+         <View
+             android:layout_marginTop="2dp"
+             android:layout_marginStart="10dp"
+             android:layout_toEndOf="@id/ProfileUsername"
+             android:layout_width="4dp"
+             android:background="@color/OrangeLight2"
+             android:layout_height="20dp"
+             android:id="@+id/ggez"/>
+         <TextView
+             android:layout_marginTop="3dp"
+            android:textStyle="bold"
+             android:id="@+id/NL"
+             android:layout_toEndOf="@id/ggez"
+             android:textSize="14sp"
+             android:layout_marginStart="10dp"
+             android:text="@string/ads_published"
+             android:textColor="@color/OrangeLight2"
+             android:fontFamily="sans-serif-condensed"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+         <TextView
+             android:id="@+id/UserCreatedAdsNumberDisplayer"
+             android:textStyle="bold"
+             android:textColor="@color/White"
+             android:fontFamily="sans-serif-condensed"
+             android:textSize="17sp"
+             android:layout_toEndOf="@id/NL"
+             android:layout_marginStart="5dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+     </RelativeLayout>
+     <RelativeLayout
+         android:id="@+id/NotLoggedInStatus"
+         android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+         <TextView
+             android:textColor="@color/White"
+             android:textStyle="bold"
+             android:fontFamily="sans-serif-condensed"
+             android:textSize="20sp"
+             android:id="@+id/F"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/you_re_not_logged_in"/>
+         <TextView
+             android:layout_below="@id/F"
+             android:text="@string/sign_in_up_here"
+             android:textColor="@color/OrangeLight2"
+             android:textStyle="bold"
+             android:fontFamily="sans-serif-condensed"
+             android:textSize="17sp"
+             android:layout_marginTop="5dp"
+             android:layout_centerHorizontal="true"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/SignInDoor"/>
+         <View
+             android:layout_centerHorizontal="true"
+             android:background="@color/OrangeLight2"
+             android:layout_width="105dp"
+             android:layout_height="3dp"
+             android:layout_below="@id/SignInDoor">
+
+         </View>
+
+
+     </RelativeLayout>
+
+
+         <LinearLayout
+             android:layout_marginTop="10dp"
+             android:layout_marginStart="30dp"
+             android:layout_marginEnd="20dp"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <LinearLayout
+                 android:id="@+id/ProfileSettingsLayout"
+                 android:layout_marginStart="45dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                 <ImageView
+                     android:id="@+id/ProfileSettingsIcon"
+                     android:background="@drawable/profile_setting_icon2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+                 <TextView
+                     android:id="@+id/ProfileSettingsText"
+                     android:text="Profile Settings"
+                     android:textSize="22sp"
+                     android:layout_marginStart="10dp"
+                     android:layout_marginTop="2dp"
+                     android:textStyle="bold"
+                     android:textColor="@color/OrangeLight2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+
+
+             </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+         </LinearLayout>
+
+
+
+
+ </LinearLayout>
+
+</FrameLayout>

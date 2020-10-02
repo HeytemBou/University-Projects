@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/aboutUsPopup"
+        android:icon="@drawable/setting_button_v1"
+        android:title="@string/CreateNewAd"
+        android:enabled="true"
+        android:iconTint="@color/White"
+        app:showAsAction="ifRoom"/>
+
+
+
+</menu>

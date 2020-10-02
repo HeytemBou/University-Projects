@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/GoorqGray"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:background="@color/GoorqGray"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<ScrollView
+    android:layout_marginEnd="10dp"
+    android:padding="10dp"
+    android:layout_width="0dp"
+    android:orientation="vertical"
+    android:layout_weight="0.5"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/AdImagesViewPager"
+                android:background="@color/White">
+            </android.support.v4.view.ViewPager>
+            <LinearLayout
+                android:background="@color/White"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:id="@+id/DotsLayout">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/White"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/location_black_icon"/>
+            <TextView
+                android:layout_marginStart="5dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="14sp"
+                android:textColor="@color/GrayB"
+                android:id="@+id/AddressNameDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+
+        <com.google.android.gms.maps.MapView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@color/White"
+            android:id="@+id/AdLocation">
+        </com.google.android.gms.maps.MapView>
+
+    </LinearLayout>
+        <LinearLayout
+            android:background="@color/White"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/Purple"
+               android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share_this_ad"/>
+            <ImageButton
+                android:id="@+id/shareAdButton"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/share8button8icon"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+    <ScrollView
+        android:id="@+id/mScrollView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.5">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:background="@color/White"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/cat8sub82"
+                    android:layout_alignParentStart="@id/AdCategorie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/orange"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Title"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/AdTitle"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/Black"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_below="@id/AdTitle"
+                    android:text="Category"
+                    android:layout_marginStart="35dp"
+                    android:textSize="17sp"
+                    android:id="@+id/AdCategorie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/Black"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="17sp"
+                    android:layout_below="@id/AdCategorie"
+                    android:layout_marginStart="35dp"
+                    android:text="SubCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/AdSubCategorie"/>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/Black"
+                    android:layout_marginBottom="15dp"
+                    android:text="DatePubication"
+                    android:textSize="15sp"
+                    android:layout_marginStart="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/AdSubCategorie"
+                    android:id="@+id/AdPublishDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginTop="103dp"
+                    android:layout_alignParentStart="@id/AdPublishDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ad8publish8date"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:paddingBottom="5dp"
+                android:orientation="vertical"
+                android:background="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ad_description_icon" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/description"
+                        android:textColor="@color/Black"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/GrayB"
+                    android:id="@+id/AdDescription"
+                    android:text="AR represents the next level  graphical user interface , moving on from the current 2D implementation to the environmental 3D modelling ."
+                    android:layout_width="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:background="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:background="@mipmap/adder_here"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/AdderNameAndLastName"/>
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                app:contentPadding="10dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <Button
+                        android:drawableStart="@mipmap/contact_by_phone"
+                        android:text="Tel"
+                        android:drawablePadding="4dp"
+                        android:textColor="@color/White"
+                        android:fontFamily="sans-serif-condensed"
+                        android:elevation="20dp"
+                        android:background="@drawable/contact_buttons_phone"
+                        android:id="@+id/ContactByPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:text="Email"
+                        android:textColor="@color/White"
+                        android:fontFamily="sans-serif-condensed"
+                        android:elevation="5dp"
+                        android:background="@drawable/contact_buttons_email"
+                        android:drawableStart="@mipmap/contact_by_sms_2"
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/ContactByEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:drawableStart="@mipmap/contact_by_sms3"
+                        android:elevation="5dp"
+                        android:text="SMS"
+                        android:textColor="@color/White"
+                        android:fontFamily="sans-serif-condensed"
+                        android:background="@drawable/contact_button_style_sms"
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/ContactBySMS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <LinearLayout
+                android:paddingBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginStart="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/comment_section_title_icon"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/comments_section"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/Black"/>
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="260dp"
+                    android:layout_height="80dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_gravity="center"
+                    app:cardElevation="8dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <EditText
+                        android:id="@+id/CommentField"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="15sp"
+                        android:padding="10dp"
+                        android:gravity="top"
+                        android:background="@drawable/write_comment_field_stats"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:baselineAligned="false" />
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:id="@+id/AddNewComment"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/add_new_comment_button_stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="100dp"
+                    android:text="@string/add_new_comment"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="13sp"
+                    android:textColor="@color/White"
+                    android:textAllCaps="false"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="10dp"
+                    android:drawableStart="@mipmap/send_comment_circle_drawable"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="match_parent"
+                android:id="@+id/CommentsRCV"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+</LinearLayout>

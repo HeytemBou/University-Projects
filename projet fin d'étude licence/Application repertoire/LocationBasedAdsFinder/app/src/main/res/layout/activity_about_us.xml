@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/Purple"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs">
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:background="@color/Purple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/appName"
+            android:layout_centerHorizontal="true"
+            android:text="@string/revilio"
+            android:textSize="50sp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/OrangeLight2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@id/appName"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/White"
+            android:layout_centerHorizontal="true"
+            android:textSize="17sp"
+            android:text="@string/location_based_ads_finder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/appDesc"/>
+        <TextView
+            android:textColor="@color/White"
+            android:textSize="15sp"
+            android:layout_below="@id/appDesc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/OrangeLight2"
+            android:textStyle="bold"
+            android:text="@string/developped_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:text="@string/heythem_boumaza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:text="@string/rahma_guerioun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="245dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:textColor="@color/OrangeLight2"
+            android:text="@string/all_rights_reserved_2017_2018"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

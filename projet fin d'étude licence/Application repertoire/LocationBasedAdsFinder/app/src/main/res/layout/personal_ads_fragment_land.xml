@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.firstgpsapp.proudlikeagod.locationbasedadsfinder.PersonalAdsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+
+
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/White"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <!--  <android.support.v7.widget.RecyclerView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@+id/RCV"
+                  android:scrollbars="vertical">
+              </android.support.v7.widget.RecyclerView> -->
+
+            <TextView
+                android:id="@+id/EmptyAdsListHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/orange"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/no_ads_to_show_hit_that_button_below_and_start_making_some_ads"/>
+
+
+            <GridView
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="200dp"
+                android:numColumns="3"
+                android:id="@+id/CapitalsGrid"
+                android:verticalSpacing="7dp"
+                android:horizontalSpacing="10dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center">
+
+            </GridView>
+
+
+
+
+        </RelativeLayout>
+
+     <!--   <android.support.design.widget.BottomNavigationView
+            app:itemTextColor="@color/White"
+            app:itemIconTint="@color/White"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bottom_navigation_menu"
+            android:background="@color/colorPrimary"
+            app:menu="@menu/create_new_add_bottom_menu_button"
+            app:elevation="3dp"/> -->
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5a3c89</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#121213</color>
+    <color name="White">#ffffff</color>
+    <color name="Grey">#d17e858c</color>
+    <color name="orange">#d17e19</color>
+    <color name="RegistrationFields">#f1eeec</color>
+    <color name="Black">#000000</color>
+    <color name="Cyramic">#a7a2a2</color>
+    <color name="smewi">#91a4ef</color>
+    <color name="green">#1d8b15</color>
+    <color name="PitchBlack">#262626</color>
+    <color name="OrangeLight">#c8fab92a</color>
+    <color name="greenLight">#24d421</color>
+    <color name="GreyLight">#e2e2e2</color>
+    <color name="Mirror">#e6636362</color>
+    <color name="LightBrown">#eb995429</color>
+    <color name="LightYellow">#efd807</color>
+    <color name="Lightgreen">#cbd5e7b0</color>
+    <color name="Lightgreen2">#e3c2ed68</color>
+    <color name="LightBlack">#ea0b0616</color>
+    <color name="LightBlack2">#f10b0616</color>
+    <color name="OrangeLight2">#fbfab92a</color>
+    <color name="LightBlack3">#1e1e1e</color>
+    <color name="Purple">#5a3c89</color>
+    <color name="LightGray">#adb9b9ba</color>
+    <color name="GoorqGray">#c9e5e7e6</color>
+    <color name="NewOrange">#f9a22f</color>
+    <color name="SettingsEdges">#636261</color>
+    <color name="WhiteTrans">#05fafaf9</color>
+    <color name="GrayB">#fc535352</color>
+
+    <!-- background colors for the slides -->
+    <color name="Slide_1">#ea50a438</color>
+    <color name="Slide_2">#eef2964a</color>
+    <color name="Slide_3">#fbdcdc39</color>
+    <color name="Slide_4">#7088d4</color>
+    <color name="fucking8red">#ea2e08</color>
+    <color name="brightThickYellow">#cab68408</color>
+    <color name="ThickPurple">#371670</color>
+    <color name="brightPurple">#5a3c91</color>
+    <color name="UnderlineColors">#f63a393b</color>
+    <color name="ThickPurple2">#5c359e</color>
+    <color name="brightPurple2">#76609e</color>
+
+    <!-- color for the dots -->
+    <color name="dot_inactive">#fba3a3a0</color>
+    <color name="dot_active">#f7f8f9</color>
+
+
+
+</resources>

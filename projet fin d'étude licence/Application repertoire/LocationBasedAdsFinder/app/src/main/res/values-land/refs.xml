@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+       <item name="map_filter_layout" type="layout">
+        @layout/map_filter_fragment_land
+    </item>
+    <item name="container_activity_layout" type="layout">
+        @layout/container_activity_land
+    </item>
+    <item name="personal_ads_fragment_layout" type="layout">
+        @layout/personal_ads_fragment_land
+    </item>
+    <item name="profile_fragment_layout" type="layout">
+        @layout/profile_fragment_land
+    </item>
+    <item name="search_fragment_layout" type="layout">
+        @layout/search_fragment_land
+    </item>
+    <item name="ad_details_layout" type="layout">
+        @layout/ad__details_layout_land
+    </item>
+    <item name="splash_screen_layout" type="layout">
+        @layout/splash_screen_land
+    </item>
+</resources>

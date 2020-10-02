@@ -1,0 +1,56 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/mDrawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="false"
+    android:focusableInTouchMode="false">
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.firstgpsapp.proudlikeagod.locationbasedadsfinder.MapFitlerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <com.google.android.gms.maps.MapView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:id="@+id/AdsMap"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true">
+        <ImageButton
+            android:id="@+id/OpenFilterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@mipmap/filter_markers_icon_2"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+</FrameLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/SearchParametersNavigationDrawer"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="false" />
+</android.support.v4.widget.DrawerLayout>

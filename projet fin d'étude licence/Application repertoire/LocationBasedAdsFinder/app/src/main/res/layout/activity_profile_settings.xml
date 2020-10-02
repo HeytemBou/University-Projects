@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/White"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <android.support.v7.widget.Toolbar
+        android:elevation="20dp"
+        app:title="Profile Settings"
+        app:titleTextColor="@color/Purple"
+        app:titleMarginStart="50dp"
+        android:background="@color/White"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+   <android.support.v7.widget.CardView
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/ProfileImageView"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="30dp"
+    android:padding="20dp"
+     />
+<ImageButton
+    android:id="@+id/ProfilePicEditor"
+    android:background="@mipmap/load_photo_iconround"
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"/>
+<RelativeLayout
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/UnderlineColors"
+        android:id="@+id/EditUsername"
+        android:text="@string/edit"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"/>
+    <View
+        android:layout_marginEnd="10dp"
+        android:layout_width="26dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/EditUsername"
+        android:background="@color/UnderlineColors"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/CurrentStateIndicatorUsername"
+        android:text="@string/your_current_username"
+        android:textColor="@color/Purple"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/NextStateIndicatorUsername"
+        android:text="@string/enter_a_new_username"
+        android:visibility="gone"
+        android:textColor="@color/Purple"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_below="@id/CurrentStateIndicatorUsername"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/profile_settings_fields_states"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/ResetUsernameField"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/UsernameErrorHint"
+        android:text="@string/you_don_t_be_nameless_right"
+        android:textColor="@color/fucking8red"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ResetUsernameField"/>
+    <TextView
+        android:id="@+id/UsernameFormatErrorHint"
+        android:text="@string/usernae_must_be_at_least_6_characters_long"
+        android:textColor="@color/fucking8red"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ResetUsernameField"/>
+    <TextView
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/UnderlineColors"
+        android:id="@+id/EditEmail"
+        android:text="@string/edit"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@id/CurrentStateIndicatorEmail"/>
+    <View
+        android:layout_marginEnd="10dp"
+        android:layout_width="26dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/EditEmail"
+        android:background="@color/UnderlineColors"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/CurrentStateIndicatorEmail"
+        android:layout_below="@id/ResetUsernameField"
+        android:layout_marginTop="30dp"
+        android:text="@string/your_current_email"
+        android:textColor="@color/Purple"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_above="@id/ResetEmailField"
+        android:id="@+id/NextStateIndicatorEmail"
+        android:text="@string/enter_a_new_email"
+        android:visibility="gone"
+        android:textColor="@color/Purple"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_below="@id/CurrentStateIndicatorEmail"
+        android:id="@+id/ResetEmailField"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/profile_settings_fields_states"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+    <TextView
+        android:id="@+id/EmailErrorHint"
+        android:text="@string/not_a_valid_email_address"
+        android:textColor="@color/fucking8red"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:textSize="13sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ResetEmailField"/>
+    <TextView
+        android:id="@+id/EmailEmptinessErrorHint"
+        android:text="@string/you_must_provide_a_valid_email_address"
+        android:textColor="@color/fucking8red"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:textSize="13sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ResetEmailField"/>
+</RelativeLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/DiscardChanges"
+                android:layout_marginStart="10dp"
+                android:text="@string/discard_changes"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/Purple"
+                android:textSize="15sp"
+                android:background="@null"
+                android:layout_marginTop="20dp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/SaveChanges"
+                android:textSize="15sp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/save_changes_button_style"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/SaveChanges"
+                android:textAllCaps="false"
+                android:textColor="@color/White" />
+        </LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+                <Button
+                    android:paddingStart="50dp"
+                    android:text="@string/log_out"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Purple"
+                    android:drawableStart="@mipmap/log_out_button2"
+                    android:paddingEnd="90dp"
+                    android:layout_marginBottom="20dp"
+                    android:elevation="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/log_out_button_style"
+                    android:id="@+id/LogOutButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            <Button
+                android:paddingStart="50dp"
+                android:text="@string/change_account"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/Purple"
+                android:drawableStart="@mipmap/change_account_button"
+                android:paddingEnd="90dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/log_out_button_style"
+                android:id="@+id/ChangeAccountButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:paddingStart="50dp"
+                android:text="@string/delete_account"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/Purple"
+                android:drawableStart="@mipmap/delete_account_icon"
+                android:paddingEnd="90dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/log_out_button_style"
+                android:id="@+id/DeleteAccountButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Purple"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/OrangeLight2"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/what_kind_of_an_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Spinner
+            android:spinnerMode="dialog"
+            android:id="@+id/CatSpinner"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/search_spinner_style"
+            android:layout_width="250dp"
+            android:layout_height="45dp">
+        </Spinner>
+        <Spinner
+            android:spinnerMode="dialog"
+            android:id="@+id/SubCatSpinner"
+            android:layout_below="@id/CatSpinner"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/search_spinner_style"
+            android:layout_width="250dp"
+            android:layout_height="45dp">
+
+        </Spinner>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_drawable_3"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="220dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_drawable_3"
+            android:layout_marginTop="75dp"
+            android:layout_marginStart="220dp"/>
+
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:checkedButton="@id/Both"
+        android:layout_marginTop="5dp"
+        android:id="@+id/typeRadioGroup"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/Both"
+            android:textColorHint="@color/White"
+            android:buttonTint="@color/White"
+            android:hint="@string/Both"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/Demand"
+            android:textColorHint="@color/White"
+            android:buttonTint="@color/White"
+            android:layout_marginStart="5dp"
+            android:hint="@string/Demand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/Offer"
+            android:textColorHint="@color/White"
+            android:buttonTint="@color/White"
+            android:layout_marginStart="5dp"
+            android:hint="@string/Offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+    <TextView
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/within_the_last"
+        android:textColor="@color/OrangeLight2"
+        android:layout_marginStart="10dp"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <RadioGroup
+        android:id="@+id/timeIntervalRadioGroup"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/m24Hours"
+            android:checked="true"
+            android:textColorHint="@color/White"
+            android:hint="@string/_24_hours"
+            android:buttonTint="@color/White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/m7Days"
+            android:textColorHint="@color/White"
+            android:hint="@string/_7_days"
+            android:buttonTint="@color/White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/m30Days"
+            android:textColorHint="@color/White"
+            android:hint="@string/_30_days"
+            android:buttonTint="@color/White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/OrangeLight2"
+            android:text="@string/where"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/OrangeLight2"
+            android:id="@+id/GPSindicator"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gps_service_not_available"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/distanceRadioGroup"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/AroundMe"
+            android:checked="true"
+            android:textColorHint="@color/White"
+            android:hint="@string/around_me_less_than_3_km"
+            android:buttonTint="@color/White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/InMyCity"
+            android:textColorHint="@color/White"
+            android:hint="@string/in_my_city_less_than_10_km"
+            android:buttonTint="@color/White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/InMyRegion"
+            android:textColorHint="@color/White"
+            android:hint="@string/in_my_region_less_than_30_km"
+            android:buttonTint="@color/White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/Everywhere"
+            android:textColorHint="@color/White"
+            android:hint="@string/everywhere"
+            android:buttonTint="@color/White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/LetMeChoose"
+            android:textColorHint="@color/White"
+            android:hint="@string/let_me_choose"
+            android:buttonTint="@color/White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:text="0"
+        android:textSize="17sp"
+        android:textColor="@color/White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarValueDisplayer"/>
+        <TextView
+            android:id="@+id/Km"
+            android:textSize="17sp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/OrangeLight2"
+            android:text="Km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/distancePicker"
+        android:max="500"
+        android:progressTint="@color/OrangeLight2"
+        android:progressBackgroundTint="@color/White"
+        android:thumbTint="@color/White"
+        android:layout_width="250dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="20dp" />
+
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/filter_button_custom_states"
+        android:id="@+id/FilterButton"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/Filter"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

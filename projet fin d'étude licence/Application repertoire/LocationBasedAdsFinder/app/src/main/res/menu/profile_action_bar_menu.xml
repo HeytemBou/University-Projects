@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+
+    >
+    <item
+        android:id="@+id/settingOp"
+        android:icon="@mipmap/settingv2"
+        android:title="settings"
+        app:showAsAction="ifRoom">
+        <menu
+            android:background="@color/Black"
+        >
+    <item android:id="@+id/Settings"
+        android:title="@string/SettingLabel"
+        android:textColor="@color/White"
+        android:iconTint="@color/White"/>
+    <item android:id="@+id/Help"
+        android:title="@string/HelpLabel"
+        android:textColor="@color/White"/>
+        <item
+            android:id="@+id/LogOut"
+            android:title="@string/LogOutLabel"
+            android:textColor="@color/White">
+
+        </item>
+        </menu>
+    </item>
+</menu>
+
+
+
