@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.firstgpsapp.proudlikeagod.locationbasedadsfinder.TutorialActivity">
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/SlidesPager">
+
+    </android.support.v4.view.ViewPager>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/White"
+        android:alpha="0.5"
+        android:layout_above="@id/DotAndNextAndSkip"
+        android:layout_marginBottom="15dp"/>
+    <LinearLayout
+        android:layout_marginBottom="55dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/DotAndNextAndSkip">
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SkipButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/SlideSkipButton"
+        android:textAppearance="@style/TextAppearanceForTheSlidesContent"
+        android:background="@null"
+        android:layout_marginBottom="15dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NextButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/SlideNextButton"
+        android:textAppearance="@style/TextAppearanceForTheSlidesContent"
+        android:background="@null"
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>

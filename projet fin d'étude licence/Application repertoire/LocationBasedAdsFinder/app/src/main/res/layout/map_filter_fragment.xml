@@ -1,0 +1,68 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/mDrawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="false"
+    android:focusableInTouchMode="false">
+
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/f"
+    tools:context="com.firstgpsapp.proudlikeagod.locationbasedadsfinder.MapFitlerFragment">
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.google.android.gms.maps.MapView
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+           android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/AdsMap" >
+        </com.google.android.gms.maps.MapView>
+
+        <LinearLayout
+            android:id="@+id/linearL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true">
+            <ImageButton
+                android:layout_marginStart="10dp"
+                android:id="@+id/OpenFilterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@mipmap/filter_markers_icon_2"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/SearchParametersNavigationDrawer"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="false"
+        android:background="@color/colorPrimary" />
+
+
+</android.support.v4.widget.DrawerLayout>

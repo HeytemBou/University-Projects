@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:background="@drawable/single_comment_style"
+    android:padding="10dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_centerVertical="true"
+        android:layout_height="50dp"
+        android:id="@+id/AccountImage"/>
+    <LinearLayout
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/UserName"
+        android:textSize="13sp"
+        android:textColor="@color/White"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:text="Ahmed"
+        android:layout_below="@id/AccountImage"
+
+        />
+    <TextView
+        android:textSize="10sp"
+        android:textColor="@color/White"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginEnd="5dp"
+        android:layout_alignBaseline="@id/UserName"
+        android:id="@+id/CommentPublicationDate"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/CommentContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:padding="5dp"
+        android:background="@color/Purple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:textColor="@color/White"
+        android:text="this is a comment"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/AccountImage"
+        android:id="@+id/CommentContent"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="15sp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

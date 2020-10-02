@@ -1,0 +1,121 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.firstgpsapp.proudlikeagod.locationbasedadsfinder.SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:id="@+id/emptyResultHint"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/empty8result"/>
+                <TextView
+                    android:textColor="@color/OrangeLight2"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="19sp"
+                    android:text="@string/no_results_found"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:id="@+id/RCV"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.42"
+            android:fillViewport="true">
+
+        <LinearLayout
+            android:background="@color/Purple"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <Spinner
+                android:id="@+id/CategorySearchSpinner"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/search_spinner_style"
+                android:layout_gravity="center"
+                android:layout_width="220dp"
+                android:layout_height="40dp">
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/SubCategorySearchSpinner"
+                android:layout_width="220dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/search_spinner_style">
+            </Spinner>
+            <RadioGroup
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColorHint="@color/White"
+                    android:hint="@string/Both"
+                    android:buttonTint="@color/White"
+                    android:id="@+id/BothTypesCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:textColorHint="@color/White"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginStart="5dp"
+                    android:hint="@string/Offer"
+                    android:buttonTint="@color/White"
+                    android:id="@+id/OfferCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:textColorHint="@color/White"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginStart="5dp"
+                    android:hint="@string/Demand"
+                    android:buttonTint="@color/White"
+                    android:id="@+id/DemandCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <Button
+               android:layout_gravity="center"
+                android:text="@string/filter"
+                android:textAllCaps="false"
+                android:id="@+id/SearchButton"
+                android:textColor="@color/White"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/search_button_style"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</FrameLayout>

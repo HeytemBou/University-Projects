@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/Purple"
+        app:title="Revilio"
+        app:titleMarginStart="40dp"
+        app:titleTextColor="@color/White"
+        >
+        <ImageButton
+            android:id="@+id/CreateAdItem"
+            android:layout_marginStart="160dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/create_ad_icon2"/>
+        <ImageButton
+            android:id="@+id/aboutuspopup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:background="@drawable/settingv8"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:background="@color/Purple"
+        app:tabTextColor="@color/White"
+        app:tabIndicatorColor="@color/OrangeLight"
+        app:tabSelectedTextColor="@color/OrangeLight"
+        android:id="@+id/MyTabLayout"
+        app:tabTextAppearance="@style/TabLayoutTextAppearance">
+        <android.support.design.widget.TabItem
+
+            android:id="@+id/tabItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SearchTabTitle" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MapFilterTabTitle"/>
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabItem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ProfileTabTitle"/>
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabItem4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PersonalAdsTabTitle"/>
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_weight="0.9"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:id="@+id/MyViewPager">
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
+
+
+</RelativeLayout>

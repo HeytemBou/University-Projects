@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <VideoView
+        android:id="@+id/VideoClip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"/>
+    <LinearLayout
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp">
+        <Button
+            android:id="@+id/sign_up"
+            android:textAppearance="@style/TextAppearance"
+            android:text="@string/Sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_in_button_custom_states"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/InscriptionForm"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/Line">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="or"
+                android:textColor="@color/White"
+                android:textSize="17dp"
+                android:textAppearance="@style/TextAppearance"
+                android:id="@+id/or"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/or"
+                android:background="@color/White"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="15dp"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_toRightOf="@id/or"
+                android:background="@color/White"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/anonyme"
+            android:textAppearance="@style/TextAppearance"
+            android:background="@drawable/anonyme_button_custom_states"
+            android:text="@string/anonymous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Already"
+            android:textColor="@color/White"
+            android:layout_gravity="center_horizontal"/>
+        <Button
+            android:id="@+id/sign_in"
+            android:text="@string/Sign_in"
+            android:textColor="@color/Black"
+            android:textAppearance="@style/TextAppearance"
+            android:background="@drawable/log_in_button_custom_states"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

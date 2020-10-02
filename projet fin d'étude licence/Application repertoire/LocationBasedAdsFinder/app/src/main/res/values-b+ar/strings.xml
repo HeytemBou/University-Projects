@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">موجد الإعلاناات</string>
+    <string name="Sign_up"></string>
+    <string name="Sign_in">sign in</string>
+    <string name="username_hint">Nome d\'utilisateur</string>
+    <string name="password_hint">Password</string>
+    <string name="anonymous">Continue as anonymous</string>
+    <string name="ForgotPassword">Forgot your password ?</string>
+    <string name="CreateAccount">Create account</string>
+    <string name="RegistrationFormTitle">Create account</string>
+    <string name="SettingLabel">Settings</string>
+    <string name="HelpLabel">Help And Feedback</string>
+    <string name="LogOutLabel">Log out</string>
+    <string name="UsernameLabel">Choose a username :</string>
+    <string name="PasswordLabel">Pick a password :</string>
+    <string name="EmailLabel">Enter a valid email address :</string>
+    <string name="TelephoneLabel">Enter your phone number :</string>
+    <string name="Already">Already a user ?</string>
+    <string name="home">Home</string>
+    <string name="search">search</string>
+    <string name="map_search">Map filter</string>
+    <string name="create_new_ad">Create new ad</string>
+    <string name="DeleteAd">Delete</string>
+    <string name="EditAd">Edit</string>
+    <string name="PublierAd">Publish</string>
+    <string name="MasquerAd">Hide</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

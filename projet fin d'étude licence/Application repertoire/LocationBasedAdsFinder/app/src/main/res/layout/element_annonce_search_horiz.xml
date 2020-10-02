@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="250dp"
+    android:layout_marginEnd="3dp"
+    android:layout_marginStart="3dp"
+    android:background="@color/colorPrimary"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardBackgroundColor="@color/White"
+    card_view:cardElevation="4dp"
+    android:clickable="true"
+    android:focusable="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ProgressBar
+                    android:indeterminateTint="@color/OrangeLight2"
+                    android:id="@+id/loadingImageProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Image"
+                android:scaleType="fitXY"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4">
+
+            <TextView
+                 android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/fucking8red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Titre"
+                android:textSize="12sp"
+                android:layout_marginStart="10dp"
+                android:text="Title" />
+
+            <TextView
+                android:textColor="@color/Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/HiddenAdId"
+                android:textSize="12sp"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:textColor="@color/Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Date_publication"
+                android:textSize="12sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:text="12/23/2018"/>
+
+            <TextView
+                android:textColor="@color/Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Location"
+                android:textSize="12sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/Titre"
+                android:text="Constantine/Ali Mendjli" />
+            <RelativeLayout
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/Date_publication"
+                android:layout_alignBaseline="@id/Date_publication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ProgressBar
+                    android:id="@+id/distanceProgressBar"
+                    android:layout_marginBottom="5dp"
+                    android:indeterminateTint="@color/OrangeLight2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Distance"
+                android:textSize="12sp"
+
+                android:text="100 km" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
+

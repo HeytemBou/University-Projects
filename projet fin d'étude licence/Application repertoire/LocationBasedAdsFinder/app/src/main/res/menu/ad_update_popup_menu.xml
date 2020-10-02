@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/smewi">
+        <item android:id="@+id/EditAdOpt"
+            android:title="@string/EditAd"
+            android:icon="@mipmap/location_indicator"
+            android:textColor="@color/White" />
+        <item
+            android:icon="@mipmap/annonce_setting_icon_green"
+        android:id="@+id/DeleteAdOpt"
+        android:title="@string/DeleteAd"
+        android:textColor="@color/White">
+
+        </item>
+
+</menu>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.firstgpsapp.proudlikeagod.locationbasedadsfinder.MainActivity">
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:text="@string/Sign_in"
+         android:textSize="30sp"
+         android:textColor="@color/White"
+         android:layout_marginTop="40dp"
+         android:fontFamily="monospace"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:id="@+id/InscriptionForm"
+        android:orientation="vertical">
+        <TextView
+            android:fontFamily="monospace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_adress_optional"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/White"
+            android:layout_marginBottom="6dp"
+            android:textSize="14dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_fields_styled"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/White"
+            android:drawableStart="@drawable/username_icon2"
+            android:textColorHint="@color/colorPrimary"
+            android:id="@+id/Username"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"/>
+        <TextView
+            android:fontFamily="monospace"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password_hint"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/White"/>
+        <EditText
+
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_fields_styled"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="@color/White"
+            android:drawableStart="@drawable/password_lock2"
+            android:id="@+id/Password"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"/>
+        <!--  <com.dd.CircularProgressButton
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="40dp"
+          android:layout_marginRight="40dp"
+          android:layout_marginLeft="40dp"
+          android:layout_marginBottom="10dp"
+          android:backgroundTint="@color/White"
+          android:id="@+id/ProgressSignIn"
+          app:cpb_cornerRadius="30dp"
+          app:cpb_textError="@string/LoginFailed"
+          app:cpb_textComplete="@string/LoginSuccess"
+          app:cpb_colorProgress="@color/White"
+          app:cpb_textIdle="@string/Login"
+
+          /> -->
+
+
+
+         <Button
+             android:layout_width="match_parent"
+          android:textColor="@color/Black"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:background="@drawable/log_in_button_custom_states"
+          android:text="@string/Sign_in"
+          android:textAppearance="@style/TextAppearance"
+          android:textSize="15sp"
+          android:layout_marginTop="40dp"
+          android:id="@+id/SignIn"
+          android:layout_marginRight="40dp"
+          android:layout_marginLeft="40dp"
+          android:layout_marginBottom="10dp"/>
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/WrongEmailOrPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/fucking8red"
+            android:id="@+id/ErrorHint"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:fontFamily="monospace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SignUpLabel"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="13sp"
+            android:textColor="@color/White"
+            android:id="@+id/CreateNewAccount"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
